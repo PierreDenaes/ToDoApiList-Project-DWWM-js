@@ -24,7 +24,7 @@ Before you begin, ensure you have [Node.js](https://nodejs.org/en/) and npm inst
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/todoapi.git
+git clone https://github.com/PierreDenaes/ToDoApiList-Project-DWWM-js.git
 cd todoapi
 ```
 
