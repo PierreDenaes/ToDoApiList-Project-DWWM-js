@@ -25,7 +25,7 @@ Clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/PierreDenaes/ToDoApiList-Project-DWWM-js.git
-cd todoapi
+cd ToDoApiList-Project-DWWM-js
 ```
 
 ## Step 2: Install Dependencies
