@@ -51,8 +51,8 @@ For development purposes, you might want to create a self-signed SSL certificate
 2. **Run the OpenSSL command** to generate a private key and a certificate:
 
    ```bash
-   openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365
-   ````
+   openssl req -x509 -newkey rsa:2048 -keyout keytmp.pem -out cert.pem -days 365
+   ```
 
     - `x509`: This option specifies the creation of a self-signed certificate.
 
@@ -64,7 +64,13 @@ For development purposes, you might want to create a self-signed SSL certificate
 
     - `days`: The validity period of the certificate. For example, `365` days denotes one year.
 
-3. **Complete the Certificate Creation**:
+3. **Get Decrypted Keys**
+
+   ```bash
+   openssl rsa -in keytmp.pem -out key.pem
+   ```
+
+4. **Complete the Certificate Creation**:
    - Follow the prompts to input details like country code, state, and organization. These fields can be left blank for local development purposes.
 
 ### Note
